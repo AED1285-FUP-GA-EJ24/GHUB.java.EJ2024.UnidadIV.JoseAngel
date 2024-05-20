@@ -1,10 +1,53 @@
 package miPrincipal;
 
-
-
+import java.util.Scanner;
 public class Principal {
     
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        Scanner entrada = new Scanner(System.in);
+        int opcion;
+        do{
+          System.out.println("**************************************");
+          System.out.println("      MENU DE OPCIONES UNIDAD IV     ");
+          System.out.println("**************************************");
+          System.out.println("1) Demostracion de arreglos unidimensionales        ");   
+          System.out.println("2)");
+          System.out.println("3)");
+          System.out.println("4)");
+          System.out.println("5)");             
+          System.out.println("");
+
+          System.out.println("99) Salir ");
+          System.out.println("**************************************");
+          System.out.print("Selecciona Opcion:");
+          opcion = entrada.nextInt();
+          switch(opcion){
+              case 1:
+              DemoArreglos objDemoArreglos = new DemoArreglos();
+              objDemoArreglos.demoArreglos();
+              break;
+              case 2:
+              
+              break;
+              case 3:
+              
+              break;
+              case 4:
+              
+              break;
+              case 5:
+              
+              break;
+
+
+              case 99:
+              System.out.println("Saliste");
+              break;
+              default:
+              System.out.println("Opción inválida");
+        }
+      } while (opcion != 99);
+
+
     }
 }
