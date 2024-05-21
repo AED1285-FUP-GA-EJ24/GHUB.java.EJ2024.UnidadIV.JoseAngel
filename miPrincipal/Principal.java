@@ -1,4 +1,6 @@
 package miPrincipal;
+ 
+import  demoArreglos.DemoArreglos;
 
 import java.util.Scanner;
 public class Principal {
