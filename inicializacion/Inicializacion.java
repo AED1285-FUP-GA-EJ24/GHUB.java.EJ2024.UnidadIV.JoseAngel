@@ -47,7 +47,7 @@ int []nms ={3,4,5}; //Crea un arreglo de tamaño 3 y lo inicializa
 System.out.println(nms[0]);
 System.out.println(nms[1]);
 System.out.println(nms[2]);  
-
+/* 
 System.out.println("");
 char c[] = {L,u,i,s};
 System.out.println(nms[0]);
@@ -58,6 +58,19 @@ System.out.println("");
 for(int i=0;i<c.length;i++){
     System.out.println(c[i]+"");
 }
+*/
+//El metodo de inicializar arreglos utilizando constantes
+System.out.println("");
+final int ENE = 31, FEB = 28, MAR = 31, ABR = 30, MAY = 31, 
+JUN = 30, JUL = 31, AGO = 31, SEP = 3, OCT = 31, NOV = 30, DIC = 31;
+
+int meses[] = {ENE,FEB,MAR,ABR,MAY,JUN,JUL,AGO,SEP,OCT,NOV,DIC};
+System.out.println(meses[0]);
+System.out.println(meses[1]);
+System.out.println(meses[2]);
+System.out.println(meses[3]);
+System.out.println(meses[11]);
+
 
     }
 }
