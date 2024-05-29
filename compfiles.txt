@@ -5,4 +5,6 @@
 ./demoArreglos/DemoArreglos.java
 ./miPrincipal/Principal.java
 ./inicializacion/Inicializacion.java
+./generacionNombres/GeneracionNombres.java
+./arregloMultidimensionales/ArregloMultidimensionales.java
 ./productoArreglo/ProductoArreglo.java
