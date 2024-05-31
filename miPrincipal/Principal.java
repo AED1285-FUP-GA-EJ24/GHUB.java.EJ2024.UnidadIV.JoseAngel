@@ -7,8 +7,9 @@ import promedio.Promedio2;
 import inicializacion.Inicializacion;
 import generacionNombres.GeneracionNombres;
 import java.util.Scanner;
-
+import lecturaAccederArreglo.LecturaAccederArreglo;
 import arregloMultidimensionales.ArregloMultidimensionales;
+import calculoSalario.CalculoSalario;
 
 public class Principal {
     
@@ -19,14 +20,16 @@ public class Principal {
             System.out.println("**************************************");
             System.out.println("      MENU DE OPCIONES UNIDAD IV      ");
             System.out.println("**************************************");
-            System.out.println("* 1) Demo de arreglos unidimensionales"); 
-            System.out.println("* 2) Suma de un arreglo               "); 
-            System.out.println("* 3) Producto de un arreglo           "); 
-            System.out.println("* 4) Promedio de calificaciones       "); 
-            System.out.println("* 5) Promedio de calificaciones v2    "); 
-            System.out.println("* 6) Inicialización de arreglos       ");
-            System.out.println("* 7) Gneración aleatorio de nombres   ");
-            System.out.println("* 8) Arreglo Multidimensional   ");
+            System.out.println(" 1) Demo de arreglos unidimensionales"); 
+            System.out.println(" 2) Suma de un arreglo               "); 
+            System.out.println(" 3) Producto de un arreglo           "); 
+            System.out.println(" 4) Promedio de calificaciones       "); 
+            System.out.println(" 5) Promedio de calificaciones v2    "); 
+            System.out.println(" 6) Inicialización de arreglos       ");
+            System.out.println(" 7) Gneración aleatorio de nombres   ");
+            System.out.println(" 8) Arreglo Multidimensional   ");
+            System.out.println(" 9) Lectura de arreglo bidimensional  ");
+            System.out.println(" 10) Calculo salario para varios trabajadores ");
 
             System.out.println();
             System.out.println("* 99) Salir"); 
@@ -74,6 +77,12 @@ public class Principal {
                    ArregloMultidimensionales objArregloMultidimensionales = new ArregloMultidimensionales();
                    objArregloMultidimensionales.arregloMultidimensionales();
                    break;
+                   case 9:
+                   //Accediendo a un metodo estatico
+                   LecturaAccederArreglo.lecturaAccederArreglo();
+                   case 10:
+                   CalculoSalario.calculoSalario();
+                   break; 
                 case 99:
                     System.out.println("Hasta luego");
                     break;
