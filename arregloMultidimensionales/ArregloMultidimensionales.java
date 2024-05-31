@@ -96,13 +96,88 @@ public class ArregloMultidimensionales{
         puesto [9][3] = 4;
         puesto [9][4] = 5;
 
-    //Como recorrer arreglos
-    for(int i=0;i<10;i++){
-        System.out.println("\nValores del arreglo "+i+": ");
-        System.out.println(puesto[i][0]+" "+puesto[i][1]+" "+puesto[i][2]+" "+puesto[i][3]);
+    //Recorrer arreglos
+    for(int i=0;i<10;i++)
+    {
+        System.out.println("\nvalores de renglon "+i+": ");
+        System.out.print(puesto[i][0]+" "+puesto[i][1]+" "+puesto[i][2]+" "+puesto[i][3]+" "+puesto[i][4]);
+    }
+    System.out.println();
+    for(int i=0;i<80;i++){
+        System.out.println("\nvalores de renglon "+i+": ");
+        for(int j=0;j<24;j++){
+            System.out.print(pantalla[i][j]+"B");
+        }
+        System.out.println();
+
+    }
+    //Recorrer el arreglo matriz
+    for(int i=0;i<4;i++){
+        System.out.println("\nvalores de renglon "+i+": ");
+        System.out.println(matriz[i][0]+" "+matriz[i][1]+" "+matriz[i][2]+" "+matriz[i][3]);
+
+    }
+    System.out.println();
+    //Recorrer de nuevo la matriz
+    for(int i =0;i<N;i++){
+        for(int j=0;j<N;j++){
+            System.out.print("Matriz["+i+"]["+j+"]="+matriz[i][j]+" ");
+            
+        }
+        System.out.println();
+    }
+    //Asignando nuevos valores a ciertos elementos de la matriz
+    matriz[0][0]=2.1;
+    matriz[1][1]=4.2;
+    matriz[2][2]=6.3;
+    matriz[3][3]=8.4;
+    System.out.println();
+    //Recorrer de nuevo la matriz
+    for(int i =0;i<N;i++){
+        for(int j=0;j<N;j++){
+            System.out.print("Matriz["+i+"]["+j+"]="+matriz[i][j]+" ");
+            
+        }
+        System.out.println();
     }
 
-     //Inicializacion de arreglos multidimensionales
+
+    //inicalizacion de arreglos multidimensiones
+    int tabla[][]={{51,52,53},
+                   {54,55,56}};
+
+    //el reglon de arriba defina un arreglos de 2renglones y 3 columnas
+    //por lo tanto tiene 2X3 elementos, es decir 6 elementos
+     //Recorrer de nuevo la matriz
+     for(int i =0;i<2;i++){
+        for(int j=0;j<3;j++){
+            System.out.print("tabla["+i+"]["+j+"]="+tabla[i][j]+" ");
+            
+        }
+        System.out.println();
+    }
+    //inicalizacion de arreglos multidimensiones
+    int tabla2[][]={ {1,2,3,4},
+                     {5,6,7,8},
+                     {9,10,11,12}};
+    //la matriz tabla2 tiene 3 renglones y 4 columnas
+    //Recorrer de nuevo la matriz
+    for(int i =0;i<3;i++){
+        for(int j=0;j<4;j++){
+            System.out.print("tabla2["+i+"]["+j+"]="+tabla2[i][j]+" ");
+            
+        }
+        System.out.println();
+    }
+    //FORMA 2 DE RECORRER UNA MATRIZ
+    for(int i =0;i<tabla2.length;i++){
+        for(int j=0;j<tabla2[i].length;j++){
+            System.out.print("tabla2["+i+"]["+j+"]="+tabla2[i][j]+" ");
+            
+        }
+        System.out.println();
+    }
+
 
 
     }
