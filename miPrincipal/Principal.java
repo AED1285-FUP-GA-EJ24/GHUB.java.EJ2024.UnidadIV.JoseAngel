@@ -10,6 +10,7 @@ import java.util.Scanner;
 import lecturaAccederArreglo.LecturaAccederArreglo;
 import arregloMultidimensionales.ArregloMultidimensionales;
 import calculoSalario.CalculoSalario;
+import calculoSalario.CalculoSalario2;
 
 public class Principal {
     
@@ -30,6 +31,7 @@ public class Principal {
             System.out.println(" 8) Arreglo Multidimensional   ");
             System.out.println(" 9) Lectura de arreglo bidimensional  ");
             System.out.println(" 10) Calculo salario para varios trabajadores ");
+            System.out.println(" 10v2) Calculo salario para varios trabajadores ");
 
             System.out.println();
             System.out.println("* 99) Salir"); 
@@ -81,8 +83,11 @@ public class Principal {
                    //Accediendo a un metodo estatico
                    LecturaAccederArreglo.lecturaAccederArreglo();
                    case 10:
-                   CalculoSalario.calculoSalario();
+                   CalculoSalario.calcular();
                    break; 
+                   case 11:
+                   CalculoSalario2.calcular();
+                   break;
                 case 99:
                     System.out.println("Hasta luego");
                     break;

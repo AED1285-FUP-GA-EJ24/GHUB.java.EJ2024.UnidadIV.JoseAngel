@@ -4,8 +4,10 @@
 ./sumaArreglo/SumaArreglo.java
 ./demoArreglos/DemoArreglos.java
 ./miPrincipal/Principal.java
+./calculoSalario/CalculoSalario.java
 ./inicializacion/Inicializacion.java
 ./lecturaAccederArreglo/LecturaAccederArreglo.java
+./calculoSalario2/CalculoSalario2.java
 ./generacionNombres/GeneracionNombres.java
 ./arregloMultidimensionales/ArregloMultidimensionales.java
 ./productoArreglo/ProductoArreglo.java
