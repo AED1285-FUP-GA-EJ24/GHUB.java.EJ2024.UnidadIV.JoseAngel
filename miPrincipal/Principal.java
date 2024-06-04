@@ -10,7 +10,7 @@ import java.util.Scanner;
 import lecturaAccederArreglo.LecturaAccederArreglo;
 import arregloMultidimensionales.ArregloMultidimensionales;
 import calculoSalario.CalculoSalario;
-import calculoSalario.CalculoSalario2;
+import calculoSalario2.CalculoSalario2;
 
 public class Principal {
     

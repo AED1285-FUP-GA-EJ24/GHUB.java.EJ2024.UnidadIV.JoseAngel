@@ -1,11 +1,11 @@
-package calculoSalario;
+package calculoSalario2;
 import java.util.Scanner;
 
 public class CalculoSalario2{
     public static void calcular(){
         //creo objeto Scanner;
         Scanner teclado = new Scanner(System.in);
-        double salarioActual, nuevoSalario, aumento,aumentoTotal;
+        double salarioActual, nuevoSalario, aumento, aumentoTotal, salarioConAumento=0;
         final int CENTINELA = -9;
         int i=1;
         aumentoTotal = 0;
@@ -29,22 +29,44 @@ public class CalculoSalario2{
             System.out.println("El aumento es: $"+salarioActual*aumento);
             System.out.println("El nuevo salario del empleado es: $" + nuevoSalario);
             aumentoTotal += salarioActual*aumento;
+          
             
-            System.out.println("Ingreso datos de empleado : "+i+" (-9 para terminar):");
-            do {
-                System.out.println("Ingrese el salario actual del empleado (debe ser un número positivo): ");
-                salarioActual = teclado.nextDouble();
-                if (salarioActual == CENTINELA)
-                   break;
-                if (salarioActual < 0) {
-                    System.out.println("El salario no puede ser negativo. Inténtelo de nuevo.");
+            System.out.println("Ingreso datos de empleado " + i + " (-9 para terminar):");
+            salarioActual = teclado.nextDouble();
+    
+            while (salarioActual != CENTINELA) {
+                if (salarioActual <= 9000) {
+                    aumento = 0.2;
+                } else if (salarioActual <= 15000) {
+                    aumento = 0.1;
+                } else if (salarioActual <= 20000) {
+                    aumento = 0.05;
+                } else {
+                    aumento = 0;
                 }
-            } while (salarioActual < 0);
-
-        
-            i++;
+    
+                nuevoSalario = salarioActual + (salarioActual * aumento);
+                salarioConAumento = salarioActual + (salarioActual * aumento);
+                System.out.println("El aumento es: $" + salarioActual * aumento);
+                System.out.println("El nuevo salario del empleado es: $" + nuevoSalario);
+                aumentoTotal += salarioActual * aumento;
+    
+                System.out.println("Ingreso datos de empleado " + i + " (-9 para terminar):");
+                do {
+                    System.out.println("Ingrese el salario actual del empleado (debe ser un número positivo): ");
+                    salarioActual = teclado.nextDouble();
+                    if (salarioActual == CENTINELA)
+                        break;
+                    if (salarioActual < 0) {
+                        System.out.println("El salario no puede ser negativo. Inténtelo de nuevo.");
+                    }
+                } while (salarioActual < 0);
+    
+                i++;
+            }
+            System.out.println("");
+            System.out.println("El aumento de todos los empleados fueron = $" + aumentoTotal);
+            System.out.println("El total de los salarios con el aumento incluido fueron = $" + (aumentoTotal + salarioConAumento));
         }
-        System.out.println("El aumento de todos los empleados = $"+aumentoTotal);
-
     }
 }

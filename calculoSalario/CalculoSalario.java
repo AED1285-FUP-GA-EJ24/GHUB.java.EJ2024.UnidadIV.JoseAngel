@@ -4,7 +4,7 @@ public class CalculoSalario{
     public static void calcular(){
         //creo objeto Scanner;
         Scanner teclado = new Scanner(System.in);
-        double salarioActual, nuevoSalario, aumento, TT;
+        double salarioActual, nuevoSalario, aumento, aumentoTotal=0, salarioConAumento=0;
 
         final int N;
         System.out.print("¿cuántos empleados capturara?");
@@ -28,23 +28,22 @@ public class CalculoSalario{
             } else {
                 aumento = 0; 
             }
-           
+
+            salarioConAumento = salarioActual + (salarioActual * aumento);
             nuevoSalario = salarioActual + (salarioActual * aumento);
-        
+            System.out.println("");
             System.out.println("El nuevo salario del empleado es: $" + nuevoSalario);
-
-            System.out.println("Salario de todos los trabajadores");
-            
-
-           
-          
-        
-
+            System.out.println("El aumento es: $" + salarioActual * aumento);
+            System.out.println("");
+            aumentoTotal += salarioActual * aumento;
+        }
+        System.out.println("");
+        System.out.println("El aumento total de todos los empleados = $" + aumentoTotal);
+        System.out.println("El total de los salarios con el aumento incluido = $" + (aumentoTotal + salarioConAumento));
 
         }
-        
-        }
-     }
+    }
+     
      
 
 
